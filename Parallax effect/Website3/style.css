@@ -112,12 +112,16 @@ body{
     background-color: rgba(30, 8, 8, 0.377);
     padding: 0.5em 1em 0.5em 1em;
     z-index: 100;
+    font-size: 1.8vh;
+    align-items: center;
+    justify-content: center;
 }
 
 ul{
     display: flex;
     gap: 2.7em;
-    margin-left: 35%;
+    margin-left: auto;
+    
     
 }
 
@@ -128,16 +132,36 @@ ul li{
 }
 
 #button1{
-    border-radius: 30px;
+    border-radius: 2vw;
+    width: 7vw;
+    font-size: 1vw;
+    height: 4vh;
+    text-align: center;
     background-color: transparent;
     border: solid white 2px;
     font-family: 'Montserrat';
     color: antiquewhite;
     font-weight: 700;
-    padding: 0px 2em 0px 2em;
+    /* padding: 0px 2em 0px 2em; */
+    margin-left: 2vw;
+    
 }
 
 /* #logo_head{
     font-size: 2em;
     width: 100px ;
 } */
+
+@media screen and (max-width: 859px) {
+    #logo{
+        transform: translateZ(-30px) scale(3) translateY(-150%);
+        
+    }
+
+    .text{
+        transform: translate(-1px) translateY(-2.8%);
+      
+    }
+
+
+}
