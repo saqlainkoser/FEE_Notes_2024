@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    /* margin-top: 0.5%; */
+    box-sizing: border-box;
+    background-color: #bcedf8;
+}
+
+.wrapper{
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    width: 100vw;
+}
+
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    margin-top: 100%;
+}
+
+/* .images img{
+    transform: translateZ(-10px);
+} */
+
+/* #img1{
+   display: none;
+} */
+
+#img5{
+    transform: translateZ(-40px) scale(5) scaleX(130%);
+    position: absolute;
+    width: 130%;
+
+}
+
+#img4{
+    transform: translateZ(-12px) scaleX(120%) translateY(10%) scaleX(130%);
+    position: absolute;
+    width: 150%;
+}
+
+
+#img3{
+    transform: translateZ(-6px) translateY(40%) scaleX(165%) ;
+    position: absolute;
+    width: 100%;
+}
+
+#img2{
+    transform: translateZ(-2px) scale(0.7) translateY(150%) scaleX(130%) ;
+    position: absolute;
+    width: 100%;
+}
+
+#img1{
+    transform: translateZ(-1px)  translateY(250%) scale(1.2) scaleX(110%);
+    position: absolute;
+    width: 100%;
+
+}
+
+.text{
+    position: absolute;
+    transform: translate(-1px) translateY(7%);
+    background-color: rgb(34, 32, 8);
+    height:300vh;
+    color: white;
+    padding: 3em;
+    font-size: 2em;
+    font-family: 'Montserrat';
+}
+
+#logo{
+    transform: translateZ(-30px) scale(5) translateY(-150%);
+    position: absolute;
+    font-size: 6em;
+    color: rgb(255, 221, 0);
+    font-family: 'Montserrat';
+    font-weight: 900;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(229, 255, 0),
+    0 0 82px rgb(238, 255, 0),
+    0 0 92px rgb(255, 102, 0),
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    
+}
+
+.nav_bar{
+    transform: translateZ(10);
+    font-family: 'Montserrat';
+    position: sticky;
+    display: flex;
+    top:0px;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    opacity: 1;
+    background-color: rgba(30, 8, 8, 0.377);
+    padding: 0.5em 1em 0.5em 1em;
+    z-index: 100;
+}
+
+ul{
+    display: flex;
+    gap: 2.7em;
+    margin-left: 35%;
+    
+}
+
+ul li{
+    list-style:none;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+#button1{
+    border-radius: 30px;
+    background-color: transparent;
+    border: solid white 2px;
+    font-family: 'Montserrat';
+    color: antiquewhite;
+    font-weight: 700;
+    padding: 0px 2em 0px 2em;
+}
+
+/* #logo_head{
+    font-size: 2em;
+    width: 100px ;
+} */

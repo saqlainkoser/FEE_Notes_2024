@@ -69,7 +69,7 @@ header{
 
 #front1{
     transform: translateZ(5px)  scale(0.5);
-    /* transform: translateX(-40px); */
+    transform: translateX(-40px);
 }
 
 
