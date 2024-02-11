@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave&family=Montserrat:wght@400;700&family=Poppins:wght@300&display=swap');
+
+body{
+    --font-family:'Montserrat';
+    font-family: var(--font-family);
+}
+
+.button{
+    /* justify-self: end;
+    right:30px;
+    align-self: center; */
+    /* width: ; */
+    width: 70px;
+}

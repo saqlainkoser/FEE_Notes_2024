@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+        }
+
+        p{
+            border: blue 2px solid;
+            padding: 0.5em;
+        }
+
+        li,span{
+            border:red 2px solid
+            
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        
+        span{
+            display: flex;
+        }
+
+        .box_model{
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            border: solid 5px black;
+            margin: 10px; 
+            box-sizing: border-box;      
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>this is my para </p>
+        <ul>
+            <li>Item first</li>
+            <li>Item second</li>
+            <li>Item third</li>
+        </ul>
+        <p>this is my <span>second</span> para </p>
+    </div>
+
+    <div class="box_model">
+        this is box model way.
+    </div>
+</body>
+</html>

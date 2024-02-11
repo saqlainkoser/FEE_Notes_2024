@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave&family=Montserrat:wght@400;700&family=Poppins:wght@300&display=swap');
+
+
+
+@font-face {
+    font-family: 'Mensch Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mensch Regular'), url('mensch.woff') format('woff');
+}
+
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    --font-family: 'Mohave';
+}
+
+.main_parent {
+    width: 700px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    position: relative;
+}
+
+
+
+
+#image {
+    position: relative;
+    opacity: 0.4;
+    bottom: 0px;
+    transform: translateY(50%);
+    transition: all 0.4s ease-in-out;
+}
+
+#image2 {
+
+    position: absolute;
+
+    opacity: 0.4;
+    top: 158px;
+    height: 0px;
+    width: 700px;
+    transition: all 0.4s ease-in-out;
+
+    z-index: 12;
+
+}
+
+
+
+.title {
+    position: absolute;
+    align-self: center;
+    font-size: 4.65em;
+    margin-left: 12.7%;
+    letter-spacing: -2.4px;
+    margin-right: 8.5%;
+    line-height: 90px;
+    top: 1em;
+
+}
+
+.line {
+    position: absolute;
+    align-self: center;
+    width: 97px;
+    height: 3px;
+    top: 37%;
+    right: 90%;
+    background-color: black;
+    transition: width 0.8s cubic-bezier(.85, 0, .15, 1);
+    ;
+    z-index: 102;
+}
+
+.small_title {
+    position: absolute;
+    font-family: var(--font-family);
+    bottom: 20px;
+    left: 13.2%;
+    font-size: 1.5em;
+    font-family: 'Mensch Regular';
+    word-spacing: 2px;
+}
+
+
+body:hover .line {
+    width: 23.7%;
+}
+
+body:hover #image {
+    transform: translateY(0%);
+
+}
+
+body:hover #image2 {
+    height: 155px;
+}
+
+
+
+.upper_white {
+    position: absolute;
+    width: 700px;
+    height: 60%;
+    top: 309.5px;
+    z-index: 98;
+    background-color: rgb(255, 255, 255);
+}
+
+.lower_white {
+    position: absolute;
+    width: 710px;
+    height: 49%;
+    bottom: 0;
+    z-index: 11;
+    background-color: rgb(255, 255, 255);
+}
+
+.great_sign {
+    position: absolute;
+    align-self: center;
+    width: 20px;
+    height: 4px;
+    top: 20%;
+    right: 89%;
+    font-size: 20px;
+    font-weight: thin;
+    font-family: 'Lucida Sans Unicode';
+    opacity: 0.8;
+
+}
+
+.top_item {
+    position: absolute;
+    top: 25%;
+    left: -32%;
+    width: 400px;
+    height: 19px;
+    font-size: 24px;
+    font-family: 'Mensch Regular';
+    font-weight: 800;
+    transform: translateX(-30%);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(.85, 0, .15, 1);
+
+}
+
+body:hover .top_item {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+.bottom {
+    position: absolute;
+    font-size: 20px;
+    top: 45%;
+    left: -25%;
+    font-family: var(--font-family);
+}
+
+.bottom .item1 {
+    transform: translateX(-110%);
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(.85, 0, .15, 1);
+}
+
+.bottom .item2 {
+    transform: translateX(-90%);
+    opacity: 0;
+    transition: all 0.9s cubic-bezier(.85, 0, .15, 1);
+
+}
+
+.bottom .item3 {
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 0.98s cubic-bezier(.85, 0, .15, 1);
+}
+
+.bottom .item4 {
+    transform: translateX(-70%);
+    opacity: 0;
+    transition: all 1.3s cubic-bezier(.85, 0, .15, 1);
+}
+
+.bottom .item5 {
+    transform: translateX(-70%);
+    opacity: 0;
+    transition: all 1.4s cubic-bezier(.85, 0, .15, 1);
+
+}
+
+body:hover .item1,
+body:hover .item2,
+body:hover .item3,
+body:hover .item4,
+body:hover .item5 {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+svg {
+    position: absolute;
+    width: 25px;
+    left: 105%;
+    top: 37%;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(.85, 0, .15, 1);
+    animation: arrowmove 0.3s linear 1s infinite alternate;
+}
+
+body:hover svg,
+body:hover .title_right {
+    opacity: 1;
+    transform: translateX(0%);
+
+}
+
+
+.title_right {
+    position: absolute;
+    width: 500px;
+    left: 105%;
+    top: 27%;
+    font-size: 21px;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 100;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(.85, 0, .15, 1);
+}
+
+@keyframes arrowmove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(7px);
+    }
+}

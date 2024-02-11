@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper{
+        display: grid;
+        
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        grid-auto-rows: minmax(100px,auto);
+    }
+
+    .wrapper>div{
+        padding: 1em;
+        background-color: #bebebe;
+    }
+
+
+    .wrapper>:nth-child(odd){
+        background-color: #949393;
+    }
+
+    .nested{
+        display:  grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 1em;
+    }
+
+    .nested>div{
+        border: black solid 1px;
+        padding: 1em;
+    }
+
+</style>
+<body>
+    <div class="wrapper">
+       <div>lorem</div>
+       <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi animi nihil quia at! Doloremque sit, quae officia iusto provident ipsam quo autem architecto eius vel cumque asperiores perspiciatis nesciunt expedita quas reiciendis quam quidem dolorum sequi, incidunt sed animi deserunt at. Quia molestias veritatis possimus! Rerum ex nihil omnis tempore nulla fugiat dicta libero? Nisi voluptates accusamus quidem inventore voluptas, unde id explicabo reprehenderit distinctio minus suscipit magni impedit itaque non fuga sint provident temporibus pariatur laboriosam quisquam soluta. Possimus.</div>
+       
+       <div class="nested">
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+        <div>lorem</div>
+       </div>
+       <div>lorem</div>
+       <div>lorem</div>
+       <div>lorem</div>
+</body>
+</html>

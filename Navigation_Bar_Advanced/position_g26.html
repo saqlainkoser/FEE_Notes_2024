@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            width: 700px;
+            height: 1000px;
+            position: relative;
+        }
+
+        p{
+            border: inherit;
+            width: 70px;
+            height: 100px;
+        }
+
+        p.class1{
+            background-color: red;
+            /* position: relative;
+            left: 10px; */
+        }
+        p.class2{
+            background-color: rgb(43, 255, 0);
+            /* position: fixed;
+            left: 700px; */
+        }
+        p.class3{
+            background-color: rgb(4, 0, 255);
+            /* position: absolute;
+            left: 10px; */
+        }
+        p.class4{
+            background-color: rgb(255, 0, 191);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="class1">Para1</p>
+        <p class="class2">Para2</p>
+        <p class="class3">Para3</p>
+        <p class="class4">Para4</p>
+        <p class="class5">Para5</p>
+    </div>
+</body>
+</html>

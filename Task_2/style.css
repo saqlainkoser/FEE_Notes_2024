@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+body {
+    font-family: "Montserrat";
+    margin-left: 32%;
+}
+
+.container-1, .container-2, .container-3 {
+    display: flex;
+    text-align: center;
+    min-width: 720px;
+    max-width: 720px;
+    min-height: 240px;
+    max-height: 240px;
+    padding: 0;
+    margin: 0;
+}
+
+.container-1 { color: #0a3e3d; }
+.container-2 { color: darkgoldenrod; }
+.container-3 { color: rgb(191, 63, 21); }
+
+.card {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 226.6px;
+    height: 226.6px;
+    padding: 0;
+    margin: 5px;
+    text-align: center;
+    border: 3px solid;
+}
+
+i { font-size: 50px; margin: 10%; }
+
+p.time {
+    font-size: 30px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.line {
+    border: 1.5px solid;
+    padding: 0;
+    margin: 0;
+}
+
+p.work-name {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.upper {
+    margin: 0;
+    padding: 0;
+}
+
+.container-1 .upper { background-color: #BFFCF9; }
+.container-2 .upper { background-color: #FFEDCB; }
+.container-3 .upper { background-color: #FFBDCE; }
+
+.container-1 .card { border-color: #28a9a7; }
+.container-2 .card { border-color: darkgoldenrod; }
+.container-3 .card { border-color: rgb(191, 63, 21); }
+
+.container-1 .line { border-color: #28a9a7; }
+.container-2 .line { border-color: darkgoldenrod; }
+.container-3 .line { border-color: rgb(191, 63, 21); }

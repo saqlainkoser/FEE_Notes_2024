@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.one::first-line{
+            color: red;
+        }
+
+
+        p.one::first-letter{
+            font-size: 70px;
+        }
+
+        p.one::before{
+            content: 'Before';
+            display: block;
+            background-color: gray;
+        }
+        
+        p.one::after{
+            content: 'After';
+            display: block;
+            background-color: gray;
+        }
+
+        p.one::selection{
+            color: blue;
+            background-color: yellow;
+        }
+
+
+        ul li::marker{
+            color: red;
+        }
+
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        a:link{
+            color: green;
+        }
+
+        a.two:visited{
+            color: brown;
+        }
+
+        a:hover{
+            color: hotpink;
+        }
+
+        a:active{
+            background-color: black;
+        }
+
+        p.child{
+            background-color: yellow;
+            color: black;
+            display: none;
+        }
+
+        div:hover p.child{
+            display: block;
+        }
+
+        q:lang(no) {
+            quotes: "~" "~";
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <p class="one"><q lang="no">This is my paragraph.</q></p>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+
+    <a class="two" href="https://www.google.com/" target="_blank">
+        GOOGLE LINK
+    </a>
+
+
+    <div>This is my code.
+        <p class="child">This is my code instruction.</p>
+    </div>
+</body>
+</html>

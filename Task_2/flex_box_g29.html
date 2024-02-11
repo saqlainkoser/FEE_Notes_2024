@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            /* align-items:baseline; */
+        }
+
+        .wrapper>div{
+            border: 3px purple solid;
+            height: 70px;
+            width: 70px;
+            background-color: palevioletred;
+        }
+        .one{
+            /* font-size: 30px; */
+            order:2;
+        }
+
+        .three{
+            flex-grow: 1;
+            order: 1;
+            align-self: center;
+        }
+
+        .two{
+            order:3;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+        <!-- <div class="three">three</div>
+        <div class="three">three</div>
+        <div class="three">three</div>
+        <div class="three">three</div>
+        <div class="three">three</div>
+        <div class="three">three</div> -->
+    </div>
+</body>
+</html>

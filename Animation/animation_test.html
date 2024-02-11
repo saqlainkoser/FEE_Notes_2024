@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+  border-top: 100px solid #ccc;
+  height: 300px;
+}
+
+@keyframes grow {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+
+.text1{
+    width: 150px;
+    height:150px;
+    border: 1px solid black;
+}
+
+.text2{
+    width: 150px;
+    height:150px;
+    border: 1px solid black;
+}
+
+.demo:hover .text1 {
+    
+  animation-name: grow;
+  animation-duration: 2s;
+}
+
+.demo:hover .text2 {
+    
+    animation-name: grow;
+    animation-duration: 2s;
+    /* animation-fill-mode:forwards; */
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+  
+}
+
+
+    </style>
+</head>
+<body>
+    <p>Move your mouse over the gray box!</p>
+<div class="demo">
+  <div class="text1">Text1</div>
+  <div class="text2">Text2</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: solid 1px black;
+        }
+        p,ul{
+            border: solid 2px blue;
+            padding: 0.5em;
+        }
+
+        .block,li{
+            border:solid 2px red;
+        }
+
+        span{
+            display: block;
+            border: 2px green solid;
+        }
+
+        ul{
+            display: flex;
+            list-style:none;
+        }
+        .box_model{
+            border: black solid 1px;
+            /* width: 350px;
+            inline-size: 350px;
+            height: 150px;
+            block-size: 150px;
+            padding: 10px;
+            margin: 10px; */
+            width: 350px;
+            height: 150px;
+            padding: 10px;
+            box-sizing:border-box;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>I am paragraph .A short one</p>
+        <ul>
+            <li>Item One</li>
+            <li>Item two</li>
+            <li>Item three</li>
+        </ul>
+        <p>I am another paragraph with on <span>inline block</span> element </p>
+
+    </div>
+<br>
+<div class="box_model"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            width: 300px;
+            height: 1000px;
+            position: relative;
+        }
+
+        p{
+            border: inherit;
+            width: 70px;
+            height: 100px;
+        }
+
+        .child1{
+            background-color: brown;
+            /* position: relative;
+            left: 30px; */
+        }
+
+        .child2{
+            background-color: green;
+            /* position: fixed;  
+            left:0px;        */
+        }
+        .child3{
+            background-color: yellow;
+            position: absolute;
+            left:0px;
+            
+        }
+        .child4{
+            background-color: pink;
+            z-index: 99;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="child1">para1</p>
+        <p class="child2">para2</p>
+        <p class="child3">para3</p>
+        <p class="child4">para4</p>
+    </div>
+</body>
+</html>

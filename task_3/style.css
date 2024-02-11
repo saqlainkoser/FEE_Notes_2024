@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+body{
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 1);
+    --font: 'Montserrat', sans-serif;
+    font-family: var(--font);
+}
+
+
+.side_bar{
+    /* position: relative; */
+    /* display: flex;
+    flex-direction: row; */
+    /* border: 0.3px solid rgb(253, 81, 81); */
+    /* width: 420px; */
+    /* height: 538px; */
+    height: 100vh;
+    width: 422px;
+    color: #ffffff;
+    font-size: 15px;
+    /* min-width: 279px;
+    max-width:420px;
+    resize: horizontal; */
+    /* overflow:auto; */
+}
+
+.side_bar_child1{
+    /* border: inherit; */
+    height: 156px;
+    background-color: #121212;
+    border-radius: 15px;
+
+}
+
+
+.s1_spotify_logo_div{
+    /* border: inherit; */
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.logo_outer_box{
+    width: 126px;
+    height: 24px;
+    /* border: inherit; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s2_home_search_div {
+    color: #ffffff;
+    /* display: flex; */
+    box-sizing: border-box;
+    width: 420px;
+    height: 112px;
+    padding: 8px 12px;
+    /* border: inherit; */
+}
+
+.s2_home_search_div div{
+    display: flex;
+    flex-direction: column;
+    /* border: 0.1px solid wheat; */
+    width: 100%;
+    padding: 12px 4px;
+
+    
+}
+
+.s2_home_search_div div a{
+    display: flex;
+    position: relative;
+    left: 10px;
+    text-decoration: none;
+}
+
+.s2_home_search_div div a p,.s2_home_search_div div a i{
+    padding: 0;
+    margin: 0 0 0 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.s2_home_search_div div a i{
+    margin-top: 2px;
+}
+
+.side_bar{
+    /* background-color: #121212; */
+    border-radius: 15px 15px 0 0;
+}
+
+
+.s3_library{
+    margin: 5px 0 0 0;
+    height: 52px;
+    /* border: 1px solid red; */
+    background-color: #121212;
+    border-radius: 15px 15px 0 0;
+   
+}
+
+.s3_library div{
+    padding: 12px 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s3_library div a{
+    display: flex;
+    position: relative;
+    left: 20px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.s3_library div a p,.s3_library div a i{
+    padding: 0;
+    margin: 0 0 0 10px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1em;
+    
+}
+
+
+.s3_library div button{
+    padding: 0;
+    border: 0;
+    background-color: black;
+    margin-right: 25px;
+    font-size: 1.1em;
+    margin-top: 7px;
+}
+
+.s3_library div button i{
+    /* width: 30px;
+    height: 30px; */
+    background-color: black;
+    color: #ffffff;
+}
+
+
+.s4_create_playlist_div{
+    height: 300px;
+    border: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px 0px 8px;
+    background-color: #121212;
+    gap: 10px;
+}
+
+.s4_create_playlist_div div{
+    box-sizing: border-box;
+    width: 404px;
+    height: 133px;
+    background-color:#242424;
+    border-radius: 8px;
+    margin: 8px 0px 8px 0px;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600px;
+    gap: 5px;
+    position: relative;
+    
+}
+
+.s4_create_playlist_div div.child_card>span.big{
+    font-family: var(--font);
+    font-weight: 700;
+}
+
+
+#create_play_button{
+    position: absolute;
+    bottom: 18px;
+    width: 148px;
+    height: 33px;
+    border-radius: 15px;
+    font-family: var(--font);
+    font-weight: 550;
+}
+
+.s6_side_footer_div{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 24px;
+    padding-top: 50px;
+    /* align-self: end; */
+    background-color: #121212;
+    position: absolute;
+    bottom: 0px;
+    justify-content: center;
+    /* flex: 2 0 50%; */
+}
+
+.footer_child1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap; 
+}
+
+
+
+
+.s6_side_footer_div .footer_child1 a,.s6_side_footer_div .footer_child2 a{
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+
+
+#english_button{
+    color: #ffffff;
+    background-color: #121212;
+    box-shadow: none;
+    border: white 1px solid black;
+    border-radius: 30px;
+    width: 95px;
+    height: 32px;
+
+}
+
+.footer_child3{
+    position: absolute;
+    bottom: 10%;
+}
+
+.s5_empty_div{
+    height: 49vh;
+    background-color: #121212;
+    
+}

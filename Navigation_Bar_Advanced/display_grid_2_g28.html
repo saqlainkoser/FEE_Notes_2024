@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+        display: grid;
+        /* grid-template-columns: 1fr 2fr 1fr;
+         */
+         grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em; 
+        grid-auto-rows: minmax(100px,auto);
+
+    }
+
+    .wrapper>div{
+    background-color: #6f6f6f; 
+    padding: 1em; 
+      
+}
+
+    .wrapper>:nth-child(odd){
+        background-color: rgb(73, 73, 73);
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem</div>
+        <div>Lorem</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, molestias vel. Officiis veritatis temporibus assumenda inventore perferendis harum quas et incidunt, laborum reiciendis quae, voluptas provident voluptatibus. Eius modi tempora fugit nemo ab, mollitia fuga pariatur, deserunt incidunt illum ipsam iusto itaque est neque, nobis quisquam voluptas tempore soluta ullam repellat. Minus, error ex quidem nihil sequi laudantium illo perspiciatis corrupti provident consectetur enim obcaecati, esse est nam. Qui dolore impedit laboriosam, accusantium dolor eum magni obcaecati vitae illo aut.</div>
+        <div>Lorem</div>
+        <div>Lorem</div>
+        <div>Lorem</div>
+    </div>
+</body>
+</html>

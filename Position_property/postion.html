@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://t3.ftcdn.net/jpg/00/15/27/80/360_F_15278087_eaWJ3iN16u4kyHccwYQc3uI7J70bQYIu.jpg');
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+            /* background-color: blueviolet; */
+            background-size:auto;
+        }
+        .parent{
+            border: 1px solid black;
+            width: 120px;
+            padding-left: 15px;
+            /* position: relative; */
+            height: 200vh;
+        }
+        .parent>*{
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        .class1{
+            background-color: red;
+            position: absolute;
+            top:30px;
+            left:70px;
+            z-index: 999;
+        }
+
+        .class2{
+            background-color: green;
+            position: fixed;
+            right: 70px;
+            bottom: 30px;
+        }
+
+        .class3{
+            background-color: blue;
+            position:-webkit-sticky;
+            position:sticky;
+            top:40px;
+            z-index: 999;
+        }
+
+        .class4{
+            background-color: yellow;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p class="class3">item 3</p>
+        <p class="class1">item 1</p>
+        <p class="class2">item 2</p>
+        <p class="class4">item 4</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque quas pariatur nihil nostrum eum voluptate a qui, impedit molestiae adipisci atque omnis laboriosam deserunt est quis fugiat, corporis dolorem quibusdam voluptatem delectus ut sequi suscipit ducimus. Necessitatibus culpa porro modi explicabo commodi blanditiis praesentium quibusdam repellendus, harum, assumenda dolores provident consequatur, delectus sapiente cum at. Quod qui ipsum voluptates totam, accusantium obcaecati magnam officiis at tempora expedita. Tempora laboriosam nisi obcaecati? Quia animi recusandae expedita officia possimus eum suscipit, dignissimos nam? Expedita repellat aliquid laboriosam voluptatibus deleniti vitae, cum labore laudantium voluptatem corporis iure a possimus doloribus velit tempora exercitationem debitis? Hic vel minima recusandae ullam natus, veniam quod nobis itaque nulla molestiae numquam fuga sed et aut laboriosam quos corrupti laudantium eveniet quidem inventore assumenda omnis? Quam deserunt debitis consectetur nesciunt veritatis ullam maxime, veniam sunt voluptates ratione. Voluptates cum veritatis pariatur eligendi rerum ducimus quidem accusantium sequi expedita unde commodi, itaque quaerat eum quo sunt reprehenderit. Accusantium labore cupiditate rem ullam atque reprehenderit exercitationem nesciunt saepe velit quam similique tenetur nemo minus perspiciatis quae odio temporibus placeat doloremque, aliquid consequatur. Expedita perferendis blanditiis officiis et corrupti commodi tenetur ut, dolorum quisquam iure ad nemo voluptatibus ducimus praesentium deleniti sit, similique libero quod distinctio odio! Eum voluptatem quam nisi odio quibusdam est molestias magni libero vitae dolorem delectus maxime hic eos, voluptates voluptas temporibus aliquid repellat natus ex ducimus pariatur iste accusantium. Nulla iste repudiandae recusandae in architecto, quisquam, praesentium provident nihil commodi eum, ullam repellat eius qui facilis! Debitis pariatur optio non distinctio ipsum odit quos corporis fugiat, recusandae at, dolorum repudiandae nostrum in consequuntur omnis illo veritatis rerum? Veniam id eius ipsa assumenda voluptas quisquam commodi. At nemo eligendi quo voluptatum voluptatibus ullam sit ratione sequi explicabo facere et natus perspiciatis odit nostrum vitae, provident excepturi sunt.</p>
+    </div>
+
+</body>
+</html>

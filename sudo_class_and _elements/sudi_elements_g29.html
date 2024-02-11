@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.one::first-line{
+            color: red;
+        }
+
+        p.one::first-letter{
+            font-size: 30px;
+        }
+
+        p.one::before{
+            content: 'Before';
+            display: block;
+        }
+
+        p.one::after{
+            content: 'After';
+            display: block;
+        }
+
+        ul li::marker{
+            color: blue;
+        }
+
+        ul li::selection{
+            background-color: yellow;
+            color: brown;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited{
+            color: brown;
+        }
+
+        a:hover{
+            color: chartreuse;
+        }
+
+        a:active{
+            color: orange;
+        }
+
+        p.two{
+            background-color: yellow;
+            display: none;
+        }
+
+        div.parent:hover p.two{
+            display: block;
+        }
+
+        q:lang(yes){
+            quotes:"~" "~";
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="one"><q lang="yes">This is my paragraph</q></p>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+    </ul>
+    <a href="https://www.google.com/" target="_blank">GOOGLE LINK</a>
+
+    <div class="parent">
+        This is my code.
+        <p class="two">This is my instruction.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+p.one{
+   border: 1px solid black;
+   width: 50px;
+   /* white-space: pre; */
+   box-shadow: 10px 10px 5px 12px blue;
+}
+
+
+p.two{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    line-height: 100px;
+    text-decoration: ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+

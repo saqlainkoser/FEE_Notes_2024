@@ -1,0 +1,75 @@
+
+.box-fifty-percent{
+    border: 5px solid black;
+    background-color: red;
+    width: 50%;
+    height: 80px;
+    font-size: 70px;
+}
+
+.box-hundered-pixel{
+    border: 5px solid black;
+    background-color: red;
+    width: 100px;
+    height: 80px;
+    font-size: 70px;
+}
+.container{
+    width: 400px;
+    border: 5px solid black;
+}
+
+body{
+    padding: 30px;
+}
+.box-fifty-percent{
+    border: 5px solid black;
+    background-color: red;
+    width: 50%;
+    height: 80px;
+    font-size: 70px;
+}
+
+.box-fifity-vw{
+    border: 5px solid black;
+    background-color: red;
+    width: 50vw;
+    height: 80px;
+    font-size: 70px;
+}
+
+.box-fifity-vh{
+    border: 5px solid black;
+    background-color: red;
+    
+    height: 25vh;
+    font-size: 70px;
+}
+
+.container{
+    padding: 10px;
+    width: 400px;
+    border: 5px solid black;
+}
+
+.one-rem{
+    font-size: 1rem;
+}
+
+.one-em{
+    font-size: 1em;
+}
+.two-rem{
+    font-size: 2rem;
+}
+
+.two-em{
+    font-size: 2em;
+}
+
+
+.parent{
+    font-size: 30px;
+    border: 1px black solid;
+    width: 300px;
+}

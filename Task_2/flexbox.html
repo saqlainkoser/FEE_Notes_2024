@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            /* display: flex;
+            flex-direction:row-reverse; */
+            /* justify-content: end;
+            align-items:baseline; */
+            border: 1px solid black;
+            width:300px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+            align-items:baseline;
+            /* flex-wrap:wrap; */
+            align-content: start;
+
+        }
+
+        .wrapper>div{
+            border: 3px solid palevioletred;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 195, 225);
+        }
+
+        .wrapper{
+            /* font-size: 30px; */
+        }
+
+        .three{
+            /* flex-grow: 1; */
+            flex-shrink: 1;
+            /* order: 2; */
+        }
+
+        .two{
+            /* order:1; */
+        }
+
+        .one{
+            /* order:3; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">four</div>
+        <div class="five">five</div>
+        <div class="six">six</div>
+        <!-- <div class="three">Three</div>
+        <div class="three">Three</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 400px;
+            /* flex-wrap: wrap;
+            display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            gap: 0;
+        }
+
+        h1::before{
+            display: block;
+            background-color: red;
+            content: 'before';
+        }
+
+        h1::after{
+            display: block;
+            background-color: red;
+            content: 'after';
+        }
+
+        h1::first-line{
+            color: #c19191;
+        }
+
+        h1::first-letter{
+            font-size: 70px;
+            color: black;
+        }
+
+        ul{
+            display: block;
+            font-size: 30px;
+        }
+
+        li::marker{
+            color: red;
+            font-size: 30px;
+        }
+
+        ::selection{
+            color: red;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello this is sudo element example.</h1>
+    <p></p>
+    <ul>
+        <li>first</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ul>
+</body>
+</html>

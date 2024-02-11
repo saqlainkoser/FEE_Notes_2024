@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    margin: 10px;
+    height: 100%;
+}
+
+main {
+    display: grid;
+    border: 3px dotted red;
+    padding: 3px;
+    grid-gap: 3px;
+    
+    grid-template: 
+    "nav head" min-content
+    "nav main" 1fr
+        / min-content 1fr;
+}
+
+nav {
+    grid-area: nav;
+    /* border: 3px dotted blue; */
+    overflow: auto;
+    resize: horizontal;
+    
+    min-width: 120px;
+    max-width: 50vw;
+}
+
+header {
+    grid-area: head;
+    border: 3px dotted orange;
+    overflow: auto;
+    resize: vertical;
+    
+    min-height: min-content;
+    max-height: 200px;
+}
+
+section {
+    grid-area: main;
+    border: 3px dotted gray;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+          <ul>
+            <li>Nav Item</li>
+            <li>Nav Item</li>
+            <li>Nav Item</li>
+            <li>Nav Item</li>
+            <li>Nav Item</li>
+            <li>Nav Item</li>
+          </ul>
+        </nav>
+      
+        <header>
+          <h1>Header Title</h1>
+          <small>Header Subtitle</small>
+        </header>
+      
+        <section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+      </main>
+</body>
+</html>

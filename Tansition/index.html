@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            padding: 2em;
+            /* transition-property:width; */
+            /* transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function:ease;
+            transition-delay: 0s; */
+            /* transform: translate(30px , 50px);
+            transform: rotate(-20deg); */
+            /* transform: matrix(1, 0, 0, 1, 40, 50); */
+            transition: transform 0.7s,width 0.3s;
+
+        }
+
+        .parent:hover{
+           transform: translateX(100px); 
+           width: 300px;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <div class="parent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facere?
+    </div>
+</body>
+</html>
