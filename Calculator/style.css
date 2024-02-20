@@ -1,4 +1,6 @@
 
+
+
 body{
     display: flex;
     width: 100vw;
@@ -62,9 +64,10 @@ body{
     font-size: 2.5vh;
 }
 
-#keys>button:hover{
+#keys>button:active{
     background-color: #353535;
-    scale: 1.02;
+    scale: .8;
+    color: #b8b8b8;
 }
 
 
@@ -79,16 +82,30 @@ body{
     body{
         padding: 0px;
         margin: 0px;
+        height: 100vh;
+        width: 100vw;
     }
 
     .container{
     position: relative;
     top:10vh;
-    border-radius: 30px;
+    border-radius: 40vw;
     width: 80vw;
     height: 100vh;
     padding: 4px;
     gap: 2px;
+    border-radius: 30vw;
+}
+
+#display{
+    border-radius: 5vh 5vh 0px 0px ;
+    font-size: 5.5vh;
+}
+
+#keys{
+    border-radius: 0px 0px 5vh 5vh ;
+    height: 40vh;
+    
 }
 
 
@@ -97,5 +114,6 @@ body{
     width: 14vw;
     margin-left: 2vw;
     border-radius: 2vw;
+    font-size: 3.9vh;
 }
 }
