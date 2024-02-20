@@ -1,0 +1,72 @@
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 19vw;
+    height: 70vh;
+    /* border: solid black 1px; */
+    /* border-radius: 1.8vw; */
+}
+
+#display{
+    height: 40%;
+    width: 100%;
+    background-color: black;
+    border-radius: 1.8vw 1.8vw 0px 0px ;
+    color: aliceblue;
+    /* font-size: 30px; */
+    box-sizing: border-box;
+    border-style: none;
+    font-size: 4vh;
+    color: rgb(204, 204, 204);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:0.4em;
+    line-break:normal;
+    border-width: 0px;
+    margin-bottom: 0px;
+
+    
+}
+
+#keys{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 1vw;
+    padding: 1vw;
+    background-image: linear-gradient(to left top, #b72b00, #b94700, #b95e00, #b87200, #b78507);
+    border-radius: 0px 0px 1.8vw 1.8vw ;
+    position: relative;
+    top:-10px
+}
+
+#keys>button{
+    background-color: black;
+    color: aliceblue;
+    box-shadow: none;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 0.7vw;
+    height: 6vh;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5vh;
+}
+
+#keys>button:hover{
+    background-color: #353535;
+    scale: 1.02;
+}
+
+
+#display>textarea{
+    border: 0px;
+    
+}
