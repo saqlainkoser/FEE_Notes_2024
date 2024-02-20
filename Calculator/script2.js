@@ -41,5 +41,5 @@ function vibrate(){
         alert("Vibrate not supported!");
      return;
      }
-    navigator.vibrate(5500);
+    navigator.vibrate(20);
    }
