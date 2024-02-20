@@ -10,8 +10,10 @@ body{
 }
 
 .container{
+    /* max-width: 250px;
+    max-height: 300px; */
     width: 19vw;
-    height: 70vh;
+    height: 78vh;
     /* border: solid black 1px; */
     /* border-radius: 1.8vw; */
 }
@@ -68,5 +70,32 @@ body{
 
 #display>textarea{
     border: 0px;
-    
+
+}
+
+
+@media screen and (max-width:350px) {
+
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .container{
+    position: relative;
+    top:10vh;
+    border-radius: 30px;
+    width: 80vw;
+    height: 100vh;
+    padding: 4px;
+    gap: 2px;
+}
+
+
+
+#keys>button{
+    width: 14vw;
+    margin-left: 2vw;
+    border-radius: 2vw;
+}
 }
