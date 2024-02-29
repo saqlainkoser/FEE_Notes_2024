@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <button id="button">Click</button>
+    </div>
+
+
+    <script>
+        function first(event) {
+                event.stopPropagation();
+                console.log(1);
+            }
+            function second() {
+                console.log(2);
+            }
+            var button = document.getElementById("button");
+            var container = document.getElementById("container");
+            button.addEventListener("click", first);
+            container.addEventListener("click", second);
+
+            (function(a){
+                return a+100;
+            });
+
+            (a) => 
+            
+
+    </script>
+</body>
+</html>

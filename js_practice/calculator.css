@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:20% ;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 4px 20px;
+}
+
+.keys>button{
+    width: 2.5em;
+}
+
+.display{
+    background-color: black;
+    color: white;
+}

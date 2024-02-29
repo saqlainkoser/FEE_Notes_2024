@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/calculator.css">
+</head>
+<body>
+    <div class="container">
+        <textarea name="display" id="one" cols="30" rows="10" class="display"></textarea>
+        <div class="keys">
+           <button onclick="clrscr()">C</button>
+           <button onclick="appendToDispaly('%')">%</button>
+           <button onclick="appendToDispaly('/')">/</button>
+           <button onclick="deletePrivious()">del</button>
+           <button onclick="appendToDispaly('7')">7</button>
+           <button onclick="appendToDispaly('8')">8</button>
+           <button  onclick="appendToDispaly('9')">9</button>
+           <button  onclick="appendToDispaly('*')">X</button>
+           <button onclick="appendToDispaly('4')" >4</button>
+           <button onclick="appendToDispaly('5')">5</button>
+           <button onclick="appendToDispaly('6')">6</button>
+           <button onclick="appendToDispaly('-')">-</button>
+           <button onclick="appendToDispaly('1')">1</button>
+           <button onclick="appendToDispaly('2')">2</button>
+           <button onclick="appendToDispaly('3')">3</button>
+           <button onclick="appendToDispaly('+')">+</button>
+           <button onclick="appendToDispaly('00')">00</button>
+           <button onclick="appendToDispaly('0')">0</button>
+           <button onclick="appendToDispaly('.')">.</button>
+           <button onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="/calulator.js"></script>
+</body>
+</html>
