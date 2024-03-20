@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Mohave&family=Montserrat:wght@400;700&family=Poppins:wght@300&display=swap');
+
+
+body{
+    /* padding: 0 10vw 0 10vw; */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    /* margin-left: -100px; */
+    background-image: url('/Mask\ group\ \(1\).png');
+    --font-all: "Kulim Park";
+    overflow-x:hidden;
+}
+
+.line{
+    position:absolute;
+    top:6em;
+    height: 2px;
+    background-color: #88837e5f;
+    width: 100%;
+}
+
+#navbar{
+    width: 85vw;
+    position: static;
+    top: 0px;
+    height: 6em;
+    padding: 0 8vw 0 8vw;     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    /* gap: 2em; */
+}
+
+#logo{
+    color: #f5f5f5;
+    font-family: "Kulim Park";
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+#logo::first-letter{
+    font-size: 1.4em;
+}
+ul{
+    /* width: 70%; */
+    display: flex;
+    gap: 3em;
+    padding: 0;
+    /* align-self: center; */
+}
+
+ul li{
+    padding-right: auto;
+    list-style: none;
+    font-family: "Kulim Park";
+    font-weight: 900;
+    color: rgb(150, 150, 150);
+    opacity: 0.5;
+    box-sizing: content-box;
+    padding: 2em 4px 2em 0px;
+}
+
+.login{
+    font-family:"Kulim Park"; 
+    color: whitesmoke;
+    font-weight: 900;
+    /* margin-left: auto; */
+
+}
+
+#tile1,#tile2,#tile3,#tile4{
+    width: 0px;
+    height: 2px;
+    background-color: #88837e5f;
+    background-image: linear-gradient(to right, #f5f5f5, #dad7d9, #c1b9b9, #a79d98, #888378);
+    /* border-radius: 0 100% 100% 0; */
+    position: fixed;
+    top: 6em;
+    /* left:6em; */
+    /* transform: translateX(5%); */
+    color: #4577d500;
+    text-shadow: none;
+    transition: all 200ms linear 0s;
+
+}
+
+
+#li1:hover #tile1,
+#li2:hover #tile2,
+#li3:hover #tile3,
+#li4:hover #tile4 {
+  /* width: inherit; */
+  width:initial;
+}
+
+
+#li1:hover,
+#li2:hover,
+#li3:hover,
+#li4:hover {
+  color: whitesmoke;
+  opacity: 1;
+  text-shadow: 0 0 3px #ab5b1d, 0 0 7px #4578D5;
+}
+
+.main{
+    height: 200vh;
+    width: 80vw;
+    padding: 0 10vw 0 10vw;
+    position: absolute;
+
+}
+
+
+.point-box{
+    color: whitesmoke;
+    font-size: 1.4em;
+    line-height: 0.5em;
+    letter-spacing: 0.05em;
+    position: relative;
+    left: 10vh;
+    top:15vh;
+    opacity: 0.25;
+    font-weight: bolder;
+    /* font-stretch: expanded; */
+}
+
+
+
+
+#main-text{
+    color: whitesmoke;
+    font-family: var(--font-all);
+    position:relative;
+    top: -1em;
+    left: 45%;
+    font-size: 5em;
+    font-weight: 400;
+}
+
+#main-text>span{
+    color: rgb(255, 170, 0);
+}
+
+
+.coverb ,.page,.cover,.left-shadow{
+    width: 20vw;
+    height: 55vh;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 10.2em;
+    left: 16.9em;
+    border-radius: 0 1.2% 1.2% 0 ;
+
+}
+
+.page{
+    top:10.6em;
+    left: 17.3em;
+    background-color: #c1b9b9;
+}
+
+.cover{
+    top:10.0em;
+    background-color: rgb(193, 178, 178);
+    background-image: url('https://img.buzzfeed.com/buzzfeed-static/static/2020-12/21/1/asset/0d7df273f391/sub-buzz-5118-1608513136-15.jpg?downsize=800:*&output-format=auto&output-quality=auto');
+    left:16.6em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.left-shadow{
+    width: 1%;
+    top: 10.0em;
+    left: 16.7em;;
+    opacity: 0.2;
+    background-image: linear-gradient(to right, #ebeced, #b8bdbf, #87918f, #5d6660, #3a3d33);
+    /* border-right: 1px solid black; */
+}

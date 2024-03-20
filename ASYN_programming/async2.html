@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Async Programming</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        //Sync Prog
+
+        // console.log('first')
+        // console.log('second')
+        // console.log('third')
+
+
+        //Async Prog
+
+
+        // setTimeout() -- 
+           //2 parameter
+           //after some time
+           //runs only one time
+
+        // clearTimeout()
+        // setInterval()
+        // clearInterval()
+        
+        // let set1=setTimeout(()=>{
+        //     document.querySelector('.heading').style.fontFamily='Verdana';
+        //     console.log('Shaan');
+        // },3000);
+
+
+        // document.querySelector('#stop').addEventListener('click',()=>{
+        //     clearTimeout(set1);
+        // })
+
+        //setInterval()
+
+        // let set2=setInterval(()=>{
+        //     console.log('this is interval'+ Date());
+        // },1000)
+
+        
+        // document.querySelector('#stop').addEventListener('click',()=>{
+        //     clearInterval(set2);
+        // })
+
+
+        let diffonts=['Cursive','Fantasy','Serif','Sans-serif','Monospace','Arial','Arial Narrow','Times','Courier','Courier New','Verdana','Candara','Geneva','Calibri','Optima','Cambria'];
+
+        
+        let count=0;
+
+        let  changeTheText = (diffonts) =>{
+            if (count<16) {
+                document.querySelector('.heading').style.fontFamily=diffonts[count];
+                count++;
+            } else {
+                count=0;
+            }
+        }
+
+        //To start
+        document.querySelector('#start').addEventListener('click',()=>{
+            x=setInterval(changeTheText,100,diffonts);
+            return x;
+        })
+
+        //to Stop
+        document.querySelector('#stop').addEventListener('click',()=>{
+            clearInterval(x);
+        })
+
+
+
+
+
+
+
+
+
+        </script>
+</body>
+</html>

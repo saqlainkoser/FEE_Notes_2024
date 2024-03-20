@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Asyn Programming</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        //Sync Prog
+        // console.log('first');
+        // console.log('second');
+        // console.log('Third');
+
+        //Async Prog
+
+        // setTimeout(1,2,3)
+        // clearTimeout()
+        // setInterval(1,2,3)
+        // clearInterval()
+
+        let set1=setTimeout(()=>{
+            document.querySelector('.heading').innerHTML='Today is Tuesday';
+            console.log('Shaan')
+        },3000);
+
+        // document.querySelector('#stop').addEventListener('click',()=>{
+        //     clearTimeout(set1);
+        //     console.log('Changed Stopped.')
+        // })
+
+        //setInterval()
+            let printName =(val)=>{
+            console.log(val + Date()) ;
+        }
+
+
+
+        let set2=setInterval(printName,1000,'Shaan');
+
+        document.querySelector('#stop').addEventListener('click',()=>{
+            clearInterval(set2);
+            console.log('Changed Stopped.')
+        })
+
+        let diffonts=['Cursive','Fantasy','Serif','Sans-serif','Monospace','Arial','Arial Narrow','Times','Courier','Courier New','Verdana','Candara','Geneva','Calibri','Optima','Cambria'];
+
+        let count=0;
+        function letsChangeFont(diffonts){
+            if(count<diffonts.length){
+                document.querySelector('.heading').style.fontFamily=diffonts[count];
+                count++;
+            }
+            else{
+                count=0;
+            }
+        }
+
+        document.querySelector('#start').addEventListener('click',()=>{
+            x=setInterval(letsChangeFont,100,diffonts);
+            return x;
+        })
+
+        document.querySelector('#stop').addEventListener('click',()=>{
+            clearInterval(x);
+        })
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

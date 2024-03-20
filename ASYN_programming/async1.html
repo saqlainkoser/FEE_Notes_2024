@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="heading">Async Programming.</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        // console.log('first');
+        // console.log('second');
+        // console.log('Third');
+
+        //setTimeout() -- Runs only one time
+        //clearTimeout()
+
+        // setInterval()
+        // clearInterval()
+
+        // let setText = ()=>{
+        //     // document.querySelector('.heading').innerHTML='Today is Thursday.'
+        //     console.log('Shaan' + Date());
+        // }
+
+        // let set1=setTimeout(setText,1000);
+
+
+
+       //clearTimeout()
+        // document.getElementById('stop').addEventListener('click',
+        // ()=>{
+        //     clearTimeout(set1);
+
+        //     console.log('Change rok diya gaya.')
+        // })
+
+        //setInterval()
+
+        // let setText1=setInterval(setText,1000);
+
+        // document.getElementById('stop').addEventListener('click',
+        // ()=>{
+        //     clearInterval(setText1);
+        //     console.log('Change rok diya gaya.')
+        // })
+        
+
+        let diffonts=['Cursive','Fantasy','Serif','Sans-serif','Monospace','Arial','Arial Narrow','Times','Courier','Courier New','Verdana','Candara','Geneva','Calibri','Optima','Cambria'];
+
+        let count=0;
+        function letschangefont(diffonts){
+            if(count<16){
+                document.querySelector('.heading').style.fontFamily=diffonts[count];
+                console.log('changed');
+                count++;
+            }
+            else{
+                count=0;
+            }
+        }
+        //TO Start
+        document.getElementById('start').addEventListener('click',()=>{
+             x=setInterval(letschangefont,100,diffonts);
+            return x;
+        })
+
+        //TO stop
+        document.getElementById('stop').addEventListener('click',()=>{
+            clearInterval(x)
+        })
+
+
+
+
+    </script>
+</body>
+</html>

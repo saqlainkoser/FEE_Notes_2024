@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async Example</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+        let printShaan= ()=>{
+            console.log("Shaan")
+        }
+        const changeText=()=>{
+            document.querySelector('h1').innerText="This is my Async Way."
+        }
+
+        const changeme= setTimeout(changeText,2000);
+        document.querySelector('#stop').addEventListener(
+            'click',()=>{
+                clearTimeout(changeme);
+                console.log('stopped');
+            }
+        )
+
+    </script>
+</body>
+</html>

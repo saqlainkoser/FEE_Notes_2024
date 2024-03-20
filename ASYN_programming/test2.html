@@ -1,0 +1,106 @@
+<!-- Async Programming - 
+
+setTimeout()
+clearTimeout() -->
+<!-- setInterval()
+clearInterval() -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Async Programming</h1>
+    <br>
+    <br>
+    <br>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+
+    <script>
+        //Simple Sync Proggraming
+
+        console.log('first');
+        console.log('second');
+        console.log('third');
+
+
+        //Async Programming
+        // const printMessage= () => {
+        //     console.log("Shaan")
+        // }
+
+        // console.log(300);
+        // setTimeout(printMessage,2000);
+        // console.log(400);
+
+        //stop that change happening using Async Programming
+
+        //2 sec ke baad font style change ho jaye
+
+        // let changeFont = () =>{
+        //     document.querySelector('.heading').style.fontFamily='Verdana';
+        // }
+
+        // let setFont=setTimeout(changeFont,2000);
+
+        // //button code to stop 
+
+        // document.getElementById('stop').addEventListener('click',()=>{
+        //     clearTimeout(setFont);
+        //     console.log('Rok diya gaya');
+        // })
+
+
+
+        
+        // let setShaan = setInterval(()=>{
+        //     console.log('Shaan')
+        // },1000)
+
+        // document.getElementById('stop').addEventListener('click',()=>{
+        //     clearInterval(setShaan);
+        //     console.log('Shaan ko rok diya');
+        // })
+        
+
+        //many fonts 
+        let diffonts=['Cursive','Fantasy','Serif','Sans-serif','Monospace','Arial','Arial Narrow','Times','Courier','Courier New','Verdana','Candara','Geneva','Calibri','Optima','Cambria'];
+
+        let count=0;
+
+        function changeFonts(diffonts){
+                if (count<16) {
+                    count++;
+                     document.querySelector('.heading').style.fontFamily=diffonts[count];
+                    console.log('font_changed') ;
+                }
+                else{
+                    count=0;
+                }
+         }
+        
+        
+         let  setFont = () => {
+            let name= setInterval(changeFonts,100,diffonts); 
+         }
+        
+
+        document.getElementById('start').addEventListener('click',setFont)
+
+
+        document.getElementById('stop').addEventListener('click',()=>{
+            clearInterval(setFont);
+        })
+
+
+
+
+
+    </script>
+</body>
+</html>
